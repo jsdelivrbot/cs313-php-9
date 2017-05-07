@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Backpack",
+    "price": 54.99
+  },
+  {
+    "name": "Cargo Pants",
+    "price": 44.99
+  },
+  {
+    "name": "Hiking Socks",
+    "price": 34.99
+  },
+  {
+    "name": "Stove",
+    "price": 24.99
+  },
+  {
+    "name": "Tent",
+    "price": 14.99
+  },
+  {
+    "name": "Hammock",
+    "price": 94.99
+  },
+  {
+    "name": "Knife",
+    "price": 84.99
+  },
+  {
+    "name": "First Aid Kit",
+    "price": 74.99
+  },
+  {
+    "name": "Binoculars",
+    "price": 64.99
+  },
+  {
+    "name": "Water Bottle",
+    "price": 55.99
+  },
+  {
+    "name": "Boots",
+    "price": 34.99
+  },
+  {
+    "name": "Sunglasses",
+    "price": 12.99
+  },
+  {
+    "name": "Sleeping Pad",
+    "price": 15.99
+  },
+  {
+    "name": "Cot",
+    "price": 17.99
+  },
+  {
+    "name": "Air Mattress",
+    "price": 19.99
+  },
+  {
+    "name": "Headlamp",
+    "price": 26.99
+  },
+  {
+    "name": "Flashlight",
+    "price": 28.99
+  },
+  {
+    "name": "Lantern",
+    "price": 20.99
+  },
+  {
+    "name": "Rain Coat",
+    "price": 31.99
+  },
+  {
+    "name": "Pancho",
+    "price": 33.99
+  }
+]
