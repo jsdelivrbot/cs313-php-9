@@ -1,5 +1,8 @@
 <?php
-$dbUrl = "postgres://levan:password@127.0.0.1:5432/scriptures";
+      $dbUrl = getenv(DATABASE_URL); 
+      if(!isset($dbUrl)) {
+         $dbUrl = "postgres://levan:password@127.0.0.1:5432/scriptures";
+      }
                $dbOpts = parse_url($dbUrl);
 
                $dbHost = $dbOpts["host"];
