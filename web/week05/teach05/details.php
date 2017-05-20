@@ -3,20 +3,20 @@
       if(!isset($dbUrl)) {
          $dbUrl = "postgres://levan:password@127.0.0.1:5432/scriptures";
       }
-               $dbOpts = parse_url($dbUrl);
+      $dbOpts = parse_url($dbUrl);
 
-               $dbHost = $dbOpts["host"];
-               $dbPort = $dbOpts["port"];
-               $dbUser = $dbOpts["user"];
-               $dbPassword = $dbOpts["pass"];
-               $dbName = ltrim($dbOpts["path"], '/');
+      $dbHost = $dbOpts["host"];
+      $dbPort = $dbOpts["port"];
+      $dbUser = $dbOpts["user"];
+      $dbPassword = $dbOpts["pass"];
+      $dbName = ltrim($dbOpts["path"], '/');
 
-               try {
-                  $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-               } catch (PDOException $e) {
-                  print "<p>error: $e </p>\n\n";
-                  die();
-               }
+      try {
+         $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+      } catch (PDOException $e) {
+         print "<p>error: $e </p>\n\n";
+         die();
+      }
 
 
    $book = $_GET["book"];

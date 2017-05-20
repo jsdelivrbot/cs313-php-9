@@ -12,3 +12,6 @@ INSERT INTO Goal VALUES (DEFAULT,'Grow back my hair','1. Buy Rogain, 2. Dont wea
                         (DEFAULT,'Read all the books','Be like Belle from Beauty and the Beast',2,'13-JAN-18'),
                         (DEFAULT,'Lose all my marbles','Dont go insane',3,'14-JAN-18'),
                         (DEFAULT,'Get back in the game','Just DO IT!',4,'15-JAN-18');                        
+
+INSERT INTO Event VALUES (DEFAULT,'Meeting with someone','It is at an address somewhere', '11-JAN-17','12-JAN-17',1),
+                         (DEFAULT,'Meeting with someone else','It is at an address somewhere', '11-JAN-17','12-JAN-17',1);                 
