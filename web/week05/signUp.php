@@ -1,6 +1,6 @@
 <?php
-   include('db.php');
-   include('user.php');
+   include_once 'db.php';
+   include_once 'user.php';
 
    if (isset($_POST["submit"])) {
       $fname = trim($_POST['fname']);

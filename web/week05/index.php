@@ -13,7 +13,7 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title></title>
+    <title>Home</title>
 
     <link rel="shortcut icon" href="images/favicon.png">
 
@@ -56,13 +56,13 @@
           </div>
         </header>
         <nav class="prj-navigation mdl-navigation mdl-color--blue-grey-800">
-          <a class="mdl-navigation__link" style="color:white;opacity:1;" href="home.php"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Dashboard</a>
+          <a class="mdl-navigation__link" style="color:white;opacity:1;" href="index.php"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Dashboard</a>
           <a class="mdl-navigation__link" href="projects.php"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">dashboard</i>Projects</a>
           <a class="mdl-navigation__link" href="goals.php"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">check</i>Goals</a>
           <a class="mdl-navigation__link" href="events.php"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">event</i>Events</a>
           <a class="mdl-navigation__link" href="tasks.php"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">list</i>Tasks</a>
           <div class="mdl-layout-spacer"></div>
-          <a class="mdl-navigation__link" href="home.php?logout=1"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">exit_to_app</i>Sign Out</a>
+          <a class="mdl-navigation__link" href="index.php?logout=1"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">exit_to_app</i>Sign Out</a>
           <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">help_outline</i><span class="visuallyhidden">Help</span></a>
         </nav>
       </div>

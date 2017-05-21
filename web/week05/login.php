@@ -2,10 +2,10 @@
    require_once 'db.php';
    if ($user->isLoggedIn()):
       # Redirect to home
-      $user->redirect("home.php");
+      $user->redirect("index.php");
    elseif (isset($_POST["usr"]) && isset($_POST["pwd"]) && isset($_POST["submit"])):
       $user->login($_POST["usr"],$_POST["pwd"]);
-      $user->redirect("home.php");
+      $user->redirect("index.php");
 ?>
 <html>
    <head>

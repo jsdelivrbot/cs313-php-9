@@ -1,7 +1,3 @@
-<?php
-   # TODO: Default is to display ALL projects.
-   # Optionally, you can send in as a parameter the project ID and show that one project
-?>
 <!doctype html>
 <?php
    include_once 'db.php';
@@ -18,7 +14,7 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title></title>
+    <title>Projects</title>
 
     <link rel="shortcut icon" href="images/favicon.png">
 
@@ -34,7 +30,7 @@
     <div class="prj-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
       <header class="prj-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">Dashboard</span>
+          <span class="mdl-layout-title">Projects</span>
           <div class="mdl-layout-spacer"></div>
           <!-- SEARCH BAR -->
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
@@ -59,20 +55,19 @@
           </div>
         </header>
         <nav class="prj-navigation mdl-navigation mdl-color--blue-grey-800">
-          <a class="mdl-navigation__link" href="home.php"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Dashboard</a>
+          <a class="mdl-navigation__link" href="index.php"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Dashboard</a>
           <a class="mdl-navigation__link" style="color:white;opacity:1;" href="projects.php"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">dashboard</i>Projects</a>
           <a class="mdl-navigation__link" href="goals.php"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">check</i>Goals</a>
           <a class="mdl-navigation__link" href="events.php"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">event</i>Events</a>
           <a class="mdl-navigation__link" href="tasks.php"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">list</i>Tasks</a>
           <div class="mdl-layout-spacer"></div>
-          <a class="mdl-navigation__link" href="home.php?logout=1"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">exit_to_app</i>Sign Out</a>
+          <a class="mdl-navigation__link" href="index.php?logout=1"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">exit_to_app</i>Sign Out</a>
           <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">help_outline</i><span class="visuallyhidden">Help</span></a>
         </nav>
       </div>
       <main class="mdl-layout__content mdl-color--grey-100">
+        <?php if(!isset($_GET["id"])): ?>
         <div class="mdl-grid prj-content">
-
-          <div class="prj-graphs mdl-shadow--2dp mdl-color--white mdl-cell mdl-cell--12-col mdl-grid">
 
             <!--ACTION CARDS-->
             <div class="square-card mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col">
@@ -129,9 +124,12 @@
             </div>
             <!--END ACTION CARDS-->
 
-          </div>
-
         </div>
+            <?php else: 
+               $element = $db->getSingle($type, $_GET["id"]);
+               include 'single.php';
+            ?>        
+        <?php endif; ?>
       </main>
     </div>
 

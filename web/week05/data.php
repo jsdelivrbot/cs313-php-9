@@ -9,7 +9,7 @@
      public $description;
      public $start_datetime;
      public $end_datetime;
-     public $projectId;
+     public $project_id;
    }
    
    /**

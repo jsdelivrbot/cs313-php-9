@@ -108,10 +108,6 @@ div >.square-card:nth-child(4) > .mdl-card__title {
   margin-right: 32px;
 }
 
-.prj-content {
-  max-width: 1080px;
-}
-
 .prj-cards {
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
@@ -173,4 +169,44 @@ div >.square-card:nth-child(4) > .mdl-card__title {
   font-weight: bold;
   color: white;
   opacity: 1;
+}
+
+.prj-ribbon {
+  width: 100%;
+  height: 40vh;
+  background-color: #00BCD4;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+
+.prj-main {
+  margin-top: -45vh;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+
+.prj-container {
+  max-width: 1600px;
+  width: calc(100% - 16px);
+  margin: 0 auto;
+}
+
+.prj-content {
+  border-radius: 2px;
+  padding: 80px 56px;
+  /*margin-bottom: 80px;*/
+}
+
+.mdl-layout__content {
+  display: block;
+}
+
+#edit-fab {
+  margin-top: -76px;
+  margin-right: 25px;
+ color: white;
+ background: #FFDC00;
+ 
 }
