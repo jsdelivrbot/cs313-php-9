@@ -89,6 +89,5 @@
    }
    $db = new DB();
    $user = new User($db->getDB());
-   var_dump($db);
    
 ?>

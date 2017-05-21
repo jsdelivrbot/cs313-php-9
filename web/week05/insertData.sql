@@ -6,12 +6,12 @@ INSERT INTO Task VALUES (DEFAULT,'My first task', 'I do stuff to get stuff done'
                         (DEFAULT,'My second task', 'Just DO IT!', 1, false),
                         (DEFAULT,'My third task', 'This is a thing that I do', 2, false),
                         (DEFAULT,'My fourth task', 'Bathe the cat',3, false),
-                        (DEFAULT,'My fifth task', 'Play the guitar for a girl and look like a tool while doing it', 4, false);
+                        (DEFAULT,'My fifth task', 'Play the guitar for a girl and look like a tool while doing it', 1, false);
 
 INSERT INTO Goal VALUES (DEFAULT,'Grow back my hair','1. Buy Rogain, 2. Dont wear a toupee',1,'12-JAN-18'),
                         (DEFAULT,'Read all the books','Be like Belle from Beauty and the Beast',2,'13-JAN-18'),
                         (DEFAULT,'Lose all my marbles','Dont go insane',3,'14-JAN-18'),
-                        (DEFAULT,'Get back in the game','Just DO IT!',4,'15-JAN-18');                        
+                        (DEFAULT,'Get back in the game','Just DO IT!',1,'15-JAN-18');                        
 
 INSERT INTO Event VALUES (DEFAULT,'Meeting with someone','It is at an address somewhere', '11-JAN-17','12-JAN-17',1),
                          (DEFAULT,'Meeting with someone else','It is at an address somewhere', '11-JAN-17','12-JAN-17',1);                 

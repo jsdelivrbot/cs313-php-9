@@ -1,5 +1,5 @@
 CREATE TABLE Project(
-   ID SERIAL PRIMARY KEY NOT NULL,
+   id SERIAL PRIMARY KEY NOT NULL,
    name TEXT NOT NULL,
    description TEXT
 );
