@@ -30,6 +30,7 @@
 
       # Keep track of the days on which there are events
       $events = $db->getEventsThisMonth();
+      var_dump($events);
       $days = array_column($events, 'start_datetime');
       foreach ($days as $i => $day) {
          $days[$i] = date('j', strtotime($day));
