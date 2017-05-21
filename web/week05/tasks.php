@@ -154,7 +154,7 @@
     <?php include("addDialog.php"); ?>
 
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src="assets/jquery-ui.js"></script>
     <script src="assets/calendar.js"></script>
 
