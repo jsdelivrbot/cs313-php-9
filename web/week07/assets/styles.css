@@ -1,0 +1,213 @@
+html, body {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+
+.square-card {
+  margin: 1em auto;
+}
+
+.square-card > .mdl-card__title {
+  color: #fff;
+  background: #00BCD4;  
+}
+
+div >.square-card:nth-child(2) > .mdl-card__title {
+  background: #ff6b6b;
+}
+div >.square-card:nth-child(3) > .mdl-card__title {
+  background: #3D9970;
+}
+div >.square-card:nth-child(4) > .mdl-card__title {
+  background: #FFDC00;
+}
+
+.prj-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+}
+.prj-layout .mdl-layout__header .mdl-layout__drawer-button {
+  color: rgba(0, 0, 0, 0.54);
+}
+.mdl-layout__drawer .avatar {
+  margin-bottom: 16px;
+}
+.prj-drawer {
+  border: none;
+}
+/* iOS Safari specific workaround */
+.prj-drawer .mdl-menu__container {
+  z-index: -1;
+}
+.prj-drawer .prj-navigation {
+  z-index: -2;
+}
+/* END iOS Safari specific workaround */
+.prj-drawer .mdl-menu .mdl-menu__item {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.prj-drawer-header {
+  box-sizing: border-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 16px;
+  height: 151px;
+}
+.prj-avatar-dropdown {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+ margin: 6px 0px;
+}
+
+.prj-navigation {
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.prj-layout .prj-navigation .mdl-navigation__link {
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgba(255, 255, 255, 0.56);
+  font-weight: 500;
+}
+.prj-layout .prj-navigation .mdl-navigation__link:hover {
+  background-color: #00BCD4;
+  color: #37474F;
+}
+.prj-navigation .mdl-navigation__link .material-icons {
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.56);
+  margin-right: 32px;
+}
+
+.prj-cards {
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-align-content: flex-start;
+      -ms-flex-line-pack: start;
+          align-content: flex-start;
+}
+.prj-cards .prj-separator {
+  height: 32px;
+}
+.prj-cards .mdl-card__title.mdl-card__title {
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+}
+.prj-cards ul {
+  padding: 0;
+}
+.prj-cards h3 {
+  font-size: 1em;
+}
+.prj-updates .mdl-card__title {
+  min-height: 200px;
+}
+.prj-cards .mdl-card__actions a {
+  color: #00BCD4;
+  text-decoration: none;
+}
+
+.prj-options h3 {
+  margin: 0;
+}
+.prj-options .mdl-checkbox__box-outline {
+  border-color: rgba(255, 255, 255, 0.89);
+}
+.prj-options ul {
+  margin: 0;
+  list-style-type: none;
+}
+.prj-options li {
+  margin: 4px 0;
+}
+.prj-options .material-icons {
+  color: rgba(255, 255, 255, 0.89);
+}
+.prj-options .mdl-card__actions {
+  height: 64px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.prj-active {
+  font-weight: bold;
+  color: white;
+  opacity: 1;
+}
+
+.prj-ribbon {
+  width: 100%;
+  height: 40vh;
+  background-color: #00BCD4;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+
+.prj-main {
+  margin-top: -45vh;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+
+.prj-container {
+  max-width: 1600px;
+  width: calc(100% - 16px);
+  margin: 0 auto;
+}
+
+.prj-content {
+  border-radius: 2px;
+  padding: 80px 56px;
+  /*margin-bottom: 80px;*/
+}
+
+.mdl-layout__content {
+  display: block;
+}
+
+#edit-fab {
+  position: absolute;
+  bottom: 100px;
+  right: 80px;
+ color: white;
+ background: #FFDC00;
+ 
+}
